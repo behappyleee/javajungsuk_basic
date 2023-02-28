@@ -1,11 +1,27 @@
-import java.net.*;
-import java.io.*;
-import java.util.Date;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.CookieHandler;
+import java.net.HttpURLConnection;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.http.HttpClient;
 import java.text.SimpleDateFormat;
+import java.util.Date;
+
+enum testEnum {
+	RED, GREEN, YELLOW
+}
+
 
 public class TcpIpServer {
 	public static void main(String args[]) {
 		ServerSocket serverSocket = null;
+		HttpURLConnection test = null;
+		
+		HttpClient a = null;
+		a.authenticator();
+		CookieHandler test12 = CookieHandler.getDefault();
 		
 		try {
 			// 서버소켓을 생성하여 7777번 포트와 결합(bind)시킨다.

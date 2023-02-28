@@ -1,5 +1,29 @@
 class Ex6_1 { 
+	
+	class Unit {
+		
+	}
+	
+	public void testVoid() {
+		int a = 10;
+		return;
+	}
+	
+	public Unit te2stVoid() {
+		Unit u = new Unit();
+		return u;
+	}
+	
 	public static void main(String args[]) { 
+		
+		String ab = "TEST 1";
+		String c = "TEST 2";
+		
+		c = ab;
+		ab = "TEST 3";
+		
+		System.out.println(c);
+		
 		Tv t;                 // Tv인스턴스를 참조하기 위한 변수 t를 선언       
 		t = new Tv();         // Tv인스턴스를 생성한다. 
 		t.channel = 7;        // Tv인스턴스의 멤버변수 channel의 값을 7로 한다. 

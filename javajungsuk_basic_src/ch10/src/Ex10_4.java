@@ -4,7 +4,10 @@ class Ex10_4 {
 	public static void main(String[] args) {
 		Calendar date = Calendar.getInstance();
 		date.set(2019, 7, 31);	// 2019년 8월 31일
-
+			
+		StringBuilder a = new StringBuilder();
+		
+		
 		System.out.println(toString(date));
 		System.out.println("= 1일 후 =");
 		date.add(Calendar.DATE, 1);

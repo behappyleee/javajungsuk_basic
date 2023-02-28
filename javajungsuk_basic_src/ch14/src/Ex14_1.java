@@ -12,7 +12,7 @@ interface MyFunction {
 // 반환값이 있는 경우 식이나 값만 적고 return 문 생략 가능 (끝에 ; 을 붙이지 않음)
 
 // 람다식 작성 시 주의 사항 
-
+// 매개변수가 하나인 경우 괄호 생략 가능 (타입이 없을 때 만)
 
 class Ex14_1 {
 	static void execute(MyFunction f) { // 매개변수의 타입이 MyFunction인 메서드
